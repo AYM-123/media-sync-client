@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Media Sync</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div id="app-container">
+            <div id="title-container">
+                <p id="title">Media-Sync</p>
+            </div>
+            <div id="server-url-container" class="container">
+                <p class="prompt">Enter server URL:</p>
+                <input id="server-url-input" class="text-input" />
+                <label id="server-url-label" class="msg-label info"></label>
+                <button id="server-url-btn">Next</button>
+            </div>
+            <div id="username-container" class="container invisible">
+                <p class="prompt">Enter Username:</p>
+                <input id="username-input" class="text-input" />
+                <label id="username-label" class="msg-label info"></label>
+                <button id="username-btn">Next</button>
+            </div>
+            <div id="video-choose-container" class="container invisible">
+                <p class="prompt" id="video-choose-prompt">
+                    Choose the video to watch:
+                </p>
+                <input type="file" id="video-choose-input" class="file-input" />
+                <label id="video-choose-label" class="msg-label info"></label>
+                <button id="video-choose-btn">Confirm!</button>
+            </div>
+            <div id="playback-container" class="invisible">
+                <video width="1200" id="playback" controls></video>
+                <div id="status-container">
+                    <p id="connection-status" class="status">
+                        Connection: Not Connected
+                    </p>
+                    <div id="user-list">
+                        <div class="user-info">
+                            <p class="username">Username:</p>
+                            <p class="status">User Status</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

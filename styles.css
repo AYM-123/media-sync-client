@@ -1,0 +1,187 @@
+body {
+    background-color: #0b0c29;
+    margin: 0px;
+    padding: 0px;
+    font-family: Courier New;
+}
+
+#app-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#title-container {
+    width: cal(100% - 2em);
+    padding: 1em;
+}
+
+#title {
+    font-size: 4em;
+    font-weight: bold;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    margin: 0px;
+    background-image: linear-gradient(to top, #7bc1ff, #8912ff);
+    color: transparent;
+    background-clip: text;
+}
+
+.container.invisible {
+    display: none;
+}
+
+.container:not(.invisible) {
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* hide all children when parent is hidden */
+.container * {
+    display: inherit;
+}
+
+.prompt {
+    color: #7bc1ff;
+    font-size: 2em;
+}
+
+input {
+    font-size: 2em;
+    font-family: Courier New;
+    font-weight: bold;
+    color: #7bc1ff;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    text-align: center;
+    background-color: #52158f;
+    border-radius: 5px;
+    border-color: #260a42;
+    border-width: 5px;
+    border-style: solid;
+    transition: 0.5s;
+    outline: none;
+}
+
+input:focus {
+    border-color: #8912ff;
+}
+
+#server-url-input {
+    width: 25em;
+}
+
+#username-input {
+    width: 13em;
+}
+
+.msg-label {
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+.info {
+    color: #7bc1ff;
+}
+
+.error {
+    color: red;
+}
+
+.container > button {
+    font-family: Courier New;
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1em;
+    padding: 0.5em;
+    color: #7bc1ff;
+    background-color: #52158f;
+    border-radius: 10px;
+    border-style: solid;
+    outline: none;
+    border-width: 3px;
+    transition: 0.5s;
+    border-color: #260a42;
+}
+
+.container > button:hover {
+    border-color: #8912ff;
+}
+
+input.video-choose {
+    width: fit-content;
+}
+
+input.video-choose::file-selector-button {
+    font-family: Courier New;
+    font-size: 1em;
+    font-weight: 600;
+    color: #7bc1ff;
+    background-color: #52158f;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 0.2em;
+    outline: none;
+    border-width: 3px;
+    transition: 0.5s;
+    border-color: #260a42;
+    margin-left: 0.5em;
+}
+
+#playback-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#playback-container.invisible {
+    display: none;
+}
+
+#playback-container:not(invisible) {
+    display: flex;
+}
+
+#playback {
+    width: 250%;
+    padding: 2em;
+}
+
+#status-container {
+    padding-top: 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p.status {
+    color: #7bc1ff;
+    font-size: 1.5em;
+}
+
+#user-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.user-info > p {
+    color: #7bc1ff;
+    font-size: 1.5em;
+}
