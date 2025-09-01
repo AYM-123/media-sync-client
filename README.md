@@ -19,5 +19,5 @@ git clone https://github.com/AYM-123/media-sync-client
 
 ## Usage
 
-1. make sure you have a [media-syncs-server](https://github.com/AYM-123/media-sync-server) running
+1. make sure you have a [media-sync-server](https://github.com/AYM-123/media-sync-server) running
 2. Simply open `index.html` on your browser of choice and enter your server URL
